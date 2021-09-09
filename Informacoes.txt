@@ -4,6 +4,10 @@ Repositório referente ao Trabalho do Semestre do Grupo 11
 DISCIPLINA
 COM230.1 - BANCO DE DADOS I - T01 (2021.2 - 4N12)
 
+PROFESSORA
+MELISE MARIA VEIGA DE PAULA
+E-Mail: melise@unifei.edu.br
+
 GRUPO 11
 Bryan Muller da Silva - 2020012844
 Gabriel da Silva Henrique - 2020026741

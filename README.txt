@@ -1,5 +1,5 @@
 # COM230_G11
-Repositório referente ao Trabalho do Semestre do Grupo 11
+Repositório referente ao Trabalho de 2021.2
 
 DISCIPLINA
 COM230.1 - BANCO DE DADOS I - T01 (2021.2 - 4N12)

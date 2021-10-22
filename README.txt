@@ -19,3 +19,4 @@ ENTREGAS
 09/09 - PARTE 0 | PRIMEIRO ESCOPO DO PROJETO
 16/09 - PARTE 1 | Requisitos Funcionais (CRUDS)
 23/09 - PARTE 2 | MODELO CONCEITUAL (Modelo Entidade Relacionamento - MER)
+21/10 - PARTE 3 | MODELO LÓGICO + Script do Banco

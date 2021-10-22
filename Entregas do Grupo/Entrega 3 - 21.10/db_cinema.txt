@@ -1,0 +1,58 @@
+CREATE TABLE Sessões 
+( 
+ Capacidade_sessão Integer,  
+ Sala Integer,  
+ Horário time,  
+ idSessao Integer PRIMARY KEY,  
+ idFilmes Integer  
+); 
+
+CREATE TABLE Ingressos 
+( 
+ Data_compra date,  
+ Assento Integer,  
+ Código_Identificador Integer PRIMARY KEY,  
+ idUsuário_Clientes_Funcionários_ Integer,  
+ idSessões Integer
+); 
+
+CREATE TABLE Filmes 
+( 
+ Duração time,  
+ Nome varchar(200),  
+ Faixa_Etária Integer,  
+ idFilme Integer PRIMARY KEY  
+); 
+
+CREATE TABLE Produtos_Bomboniere 
+( 
+ Valor float,  
+ Nome varchar(200),  
+ Disponibilidade BIT DEFAULT 1
+); 
+
+CREATE TABLE Pedidos 
+( 
+ Número_sequencia Integer
+); 
+
+CREATE TABLE Usuário_Clientes_Funcionários_ 
+( 
+ r Integer PRIMARY KEY,  
+ Data_nascimento date,  
+ E_mail varchar(250),  
+ Senha Integer,  
+ Nome varchar(250),  
+ CPF Int,  
+ Telefone Integer,  
+ Cliente_Premium Integer,  
+ Gêneros_Preferencias Integer,  
+ CTPS Integer,  
+ Cargo varchar(250),  
+ idUsuário_Clientes_Funcionários_ Integer  
+);
+
+ALTER TABLE Sessões ADD FOREIGN KEY(idFilmes) REFERENCES Filmes (idFilmes);
+ALTER TABLE Ingressos ADD FOREIGN KEY(idUsuário_Clientes_Funcionários_) REFERENCES Usuário_Clientes_Funcionários_ (idUsuário_Clientes_Funcionários_);
+ALTER TABLE Ingressos ADD FOREIGN KEY(idSessões) REFERENCES Sessões (idSessões);
+ALTER TABLE Usuário_Clientes_Funcionários_ ADD FOREIGN KEY(idUsuário_Clientes_Funcionários_) REFERENCES Usuário_Clientes_Funcionários_ (idUsuário_Clientes_Funcionários_);
